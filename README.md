@@ -49,4 +49,3 @@ git clone https://github.com/Deji-Tech/fundtracer-by-dt.git
 
 ---
 
-<footer style="opacity:0.8">Dark · Minimal · Dev portfolio — want screenshots, demo links, or a one-page site? I can generate them next.</footer>
