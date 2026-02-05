@@ -11,7 +11,7 @@ insanity at its peak
 ## About
 - Profession: Software developer (Linux · Solidity · Python · Security · Blockchain)
 - Focus: secure on-chain systems, smart-contract auditing, backend tooling
-- Style: dark · minimalist · developer portfolio
+- Remote worker
 
 ---
 
