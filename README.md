@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hey, I'm Deji-Tech
+# Hey, I'm Deji-Tech
 
 ### Building the future of decentralized systems, one commit at a time.
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 📊 GitHub Analytics
+## GitHub Analytics
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Deji-Tech&theme=github-dark&hide_border=true&bg_color=0d1117&line=00e676&point=00e676" alt="Activity Graph" width="100%"/>
@@ -31,7 +31,7 @@
 
 ---
 
-## 🏆 Achievements & Milestones
+## Achievements & Milestones
 
 <p align="center">
 
@@ -41,7 +41,7 @@
 
 ---
 
-## 📈 Contribution Heatmap
+## Contribution Heatmap
 
 <p align="center">
 
@@ -51,7 +51,7 @@
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 ```yaml
 name:       Deji-Tech
@@ -61,11 +61,11 @@ focus:      Secure on-chain systems, smart contracts, backend tooling
 motto:      "Build secure defaults, ship with confidence."
 ```
 
-I build, audit, and break things in the Web3 space. My work spans from low-level blockchain infrastructure to polished dApp frontends — always with a security-first mindset. Passionate about open-source, developer tooling, and making DeFi safer for everyone.
+I build, audit, and break things in the Web3 space. My work spans from low-level blockchain infrastructure to polished dApp frontends -- always with a security-first mindset. Passionate about open-source, developer tooling, and making DeFi safer for everyone.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Languages
 <p>
@@ -91,39 +91,39 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
-### 🔥 [NFT Bulk Mint CLI](https://github.com/Deji-Tech/nft-mint-cli) — *New*
+### [NFT Bulk Mint CLI](https://github.com/Deji-Tech/nft-mint-cli)
 > Production-ready CLI tool for bulk NFT minting with batch processing, progress tracking, and transaction logging.
 > `[Node.js]` `[Ethers.js]` `[CLI]` `[NFT]`
 
-### 🎯 [FairClaim](https://github.com/Deji-Tech/FairClaim)
+### [FairClaim](https://github.com/Deji-Tech/FairClaim)
 > Reputation-based Solana airdrop portal with FairScale integration. Terminal-themed UI for trust-gated token claims.
 > `[Solana]` `[Anchor]` `[FairScale]` `[React]`
 
-### 🔍 [fundtracer-by-dt](https://github.com/Deji-Tech/fundtracer-by-dt)
+### [fundtracer-by-dt](https://github.com/Deji-Tech/fundtracer-by-dt)
 > Multi-chain blockchain forensics platform. Trace wallet funds, detect Sybil patterns, and analyze transaction activity.
 > `[On-chain Analysis]` `[Solana]` `[Python]` `[Security]`
 
-### 🛡️ [solana-security-bounty](https://github.com/Deji-Tech/solana-security-bounty)
+### [solana-security-bounty](https://github.com/Deji-Tech/solana-security-bounty)
 > Solana Security Reference: 5 real vulnerability examples with interactive web-based testing.
 > `[Security Research]` `[Solana]` `[Vulnerabilities]` `[Education]`
 
-### 🤖 [agentvault](https://github.com/Deji-Tech/agentvault)
+### [agentvault](https://github.com/Deji-Tech/agentvault)
 > Autonomous AI Agent Wallets for Solana. Wallets powered by AI agents with secure transaction signing.
 > `[AI]` `[Solana]` `[Agent Wallets]` `[DeFi]`
 
-### 🎬 [dejitech-mockup](https://github.com/Deji-Tech/dejitech-mockup)
+### [dejitech-mockup](https://github.com/Deji-Tech/dejitech-mockup)
 > Professional device mockup video generator CLI. Overlay screen recordings onto device frames.
 > `[CLI Tool]` `[Video Processing]` `[Python]`
 
-### 🦄 [lazorkit-starter](https://github.com/Deji-Tech/lazorkit-starter)
+### [lazorkit-starter](https://github.com/Deji-Tech/lazorkit-starter)
 > Starter kit for building with Lazorkit on Solana. Jumpstart your next Solana project.
 > `[Solana]` `[Boilerplate]` `[Anchor]`
 
 ---
 
-## 📊 Detailed Stats
+## Detailed Stats
 
 <div align="center">
 
@@ -140,20 +140,20 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 
 ---
 
-## 🌍 Open Source Stats
+## Open Source Stats
 
 <p align="center">
 
 | Package | npm Downloads | GitHub Stars |
 |---|---|---|
-| nft-mint | ![npm](https://img.shields.io/npm/dt/nft-mint?color=00e676) | ⭐ New |
-| fundtracer-cli | ![npm](https://img.shields.io/npm/dt/fundtracer-cli?color=00e676) | ⭐ New |
+| nft-mint | ![npm](https://img.shields.io/npm/dt/nft-mint?color=00e676) | New |
+| fundtracer-cli | ![npm](https://img.shields.io/npm/dt/fundtracer-cli?color=00e676) | New |
 
 </p>
 
 ---
 
-## 📅 Recent Activity
+## Recent Activity
 
 <!--START_SECTION:activity-->
 <p align="center">
@@ -165,18 +165,18 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 
 ---
 
-## 📬 Get in Touch
+## Get in Touch
 
 | Channel | Link | Status |
 |---|---|---|
-| **X / Twitter** | [@hayodejiii](https://x.com/hayodejiii) | 🟢 Active |
-| **LinkedIn** | [Deji-Tech](https://linkedin.com/in/deji-tech) | 🟢 Active |
-| **Email** | [dejitech2@gmail.com](mailto:dejitech2@gmail.com) | 🟢 Responsive |
-| **GitHub** | [github.com/Deji-Tech](https://github.com/Deji-Tech) | 🟢 Active |
+| **X / Twitter** | [@hayodejiii](https://x.com/hayodejiii) | Active |
+| **LinkedIn** | [Deji-Tech](https://linkedin.com/in/deji-tech) | Active |
+| **Email** | [dejitech2@gmail.com](mailto:dejitech2@gmail.com) | Responsive |
+| **GitHub** | [github.com/Deji-Tech](https://github.com/Deji-Tech) | Active |
 
 ---
 
-## 💡 Philosophy
+## Philosophy
 
 > "The best code is the code you don't have to write. The second best code is code that's easy to read, audit, and break."
 
@@ -186,7 +186,7 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 
 ![Footer](https://komarev.com/ghpvc/?username=Deji-Tech&color=00e676&style=flat-square&label=Total+Profile+Views)
 
-**Built with 💜 and lots of ☕**
+**Built with love and lots of coffee**
 
 *Last Updated: March 2026*
 
