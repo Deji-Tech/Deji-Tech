@@ -10,7 +10,6 @@
 [![GitHub Streak](https://streak-stats.demolab.com/?user=Deji-Tech&theme=dark&hide_border=true)](https://git.io/streak-stats)
 [![X (Twitter)](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/hayodejiii)
 [![Email](https://img.shields.io/badge/Email-dejitech2%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:dejitech2@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/deji-tech)
 
 ---
 
@@ -123,20 +122,13 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 
 ---
 
-## Detailed Stats
+## Real-Time Stats
 
-<div align="center">
+<p align="center">
 
-| Metric | Value |
-|---|---|
-| **Total Contributions** | `1,000+` |
-| **Total Commits** | `500+` |
-| **Total PRs** | `100+` |
-| **Total Issues** | `50+` |
-| **Repositories** | `30+` |
-| **Stars Earned** | `50+` |
+![Deji-Tech's GitHub stats](https://github-readme-stats.vercel.app/api/wakatime?username=Deji-Tech&theme=dark&hide_border=true&v=2)
 
-</div>
+</p>
 
 ---
 
@@ -144,10 +136,10 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 
 <p align="center">
 
-| Package | npm Downloads | GitHub Stars |
-|---|---|---|
-| nft-mint | ![npm](https://img.shields.io/npm/dt/nft-mint?color=00e676) | New |
-| fundtracer-cli | ![npm](https://img.shields.io/npm/dt/fundtracer-cli?color=00e676) | New |
+| Package | npm Downloads |
+|---|---|
+| nft-mint | ![npm](https://img.shields.io/npm/dt/nft-mint?color=00e676) |
+| fundtracer-cli | ![npm](https://img.shields.io/npm/dt/fundtracer-cli?color=00e676) |
 
 </p>
 
@@ -170,7 +162,6 @@ I build, audit, and break things in the Web3 space. My work spans from low-level
 | Channel | Link | Status |
 |---|---|---|
 | **X / Twitter** | [@hayodejiii](https://x.com/hayodejiii) | Active |
-| **LinkedIn** | [Deji-Tech](https://linkedin.com/in/deji-tech) | Active |
 | **Email** | [dejitech2@gmail.com](mailto:dejitech2@gmail.com) | Responsive |
 | **GitHub** | [github.com/Deji-Tech](https://github.com/Deji-Tech) | Active |
 
