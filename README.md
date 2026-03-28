@@ -1,363 +1,193 @@
-# FundTracer
+<div align="center">
 
-Multi-chain blockchain forensics platform for tracing wallet funds, detecting Sybil patterns, and analyzing transaction activity.
+# 👋 Hey, I'm Deji-Tech
 
-## Live Apps
-
-| App | URL |
-|-----|-----|
-| Landing Page | [fundtracer.xyz](https://fundtracer.xyz) |
-| EVM Analysis | [fundtracer.xyz/app-evm](https://fundtracer.xyz/app-evm) |
-| Solana Analysis | [fundtracer.xyz/app-solana](https://fundtracer.xyz/app-solana) |
-| Telegram Alerts | [fundtracer.xyz/telegram](https://fundtracer.xyz/telegram) |
+### Building the future of decentralized systems, one commit at a time.
 
 ---
 
-## Products
-
-### Web App
-
-Browser-based wallet analysis for EVM chains and Solana. No installation required.
-
-**Supported Chains:** Linea, Base, Arbitrum, Optimism, Polygon, BNB Chain, Ethereum
-
-**Features:**
-- Wallet analysis with transaction history and risk scoring
-- Sybil detection for identifying coordinated activity
-- Contract interaction analysis
-- Portfolio tracking for tokens, DeFi positions, and NFTs
-- Scan history
-
-### CLI Tool
-
-Terminal-based blockchain forensics for developers and security researchers.
-
-**Installation:**
-
-```bash
-npm install -g fundtracer-cli
-```
-
-Or build from source:
-
-```bash
-git clone https://github.com/Deji-Tech/fundtracer-by-dt.git
-cd fundtracer-by-dt
-npm install
-cd packages/cli && npm run build && npm link
-```
-
-**Configuration:**
-
-Before using the CLI, configure your API keys:
-
-```bash
-fundtracer config --set-key alchemy:YOUR_KEY
-fundtracer config --set-key moralis:YOUR_KEY
-fundtracer config --set-key dune:YOUR_KEY
-```
-
-Get free API keys:
-- Alchemy: [dashboard.alchemy.com](https://dashboard.alchemy.com)
-- Moralis: [moralis.io](https://moralis.io)
-- Dune: [dune.com](https://dune.com)
-
-**Commands:**
-
-| Command | Description |
-|---------|-------------|
-| `fundtracer analyze <address>` | Analyze a single wallet |
-| `fundtracer compare <addresses...>` | Compare wallets for Sybil detection |
-| `fundtracer portfolio <address>` | View NFT and token holdings |
-| `fundtracer batch <file>` | Analyze multiple wallets from a file |
-| `fundtracer interactive` | Start interactive mode |
-| `fundtracer config --show` | View current configuration |
-
-**Examples:**
-
-```bash
-# Analyze a wallet
-fundtracer analyze 0x742d35Cc6634C0532925a3b844Bc9e7595f8fC71
-
-# Compare multiple wallets
-fundtracer compare 0x742d... 0xdEaD... 0x8f2C...
-
-# Export as JSON
-fundtracer analyze 0x742d... --output json --export result.json
-
-# Batch analysis from file
-fundtracer batch addresses.txt --parallel 10
-
-# View portfolio
-fundtracer portfolio 0x742d... --tokens
-```
-
-**Options:**
-
-| Option | Description |
-|--------|-------------|
-| `-c, --chain <chain>` | Target chain (ethereum, linea, arbitrum, base, optimism, polygon) |
-| `-o, --output <format>` | Output format: table, json, csv, tree |
-| `-d, --depth <number>` | Funding tree depth (default: 3) |
-| `--export <file>` | Export results to file |
-| `--min-value <eth>` | Minimum transaction value filter |
-
-### Chrome Extension
-
-Embeds FundTracer data directly into Etherscan and blockchain explorers.
-
-**Installation:**
-
-1. Download the extension from [fundtracer.xyz/ext-install](https://fundtracer.xyz/ext-install)
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable "Developer mode"
-4. Drag the downloaded file into the extensions page
-
-**Features:**
-- One-click wallet analysis on any Etherscan page
-- Risk indicators and labels
-- Quick funding trace
-- Related wallets panel
-
-### Telegram Bot
-
-Real-time wallet alerts delivered to Telegram.
-
-**Setup:**
-
-1. Open [fundtracer.xyz/telegram](https://fundtracer.xyz/telegram)
-2. Connect your wallet
-3. Open the Telegram bot and link your account
-
-**Commands:**
-
-| Command | Description |
-|---------|-------------|
-| `/add <address>` | Add a wallet to your watchlist |
-| `/list` | View your watched wallets |
-| `/remove <address>` | Remove a wallet |
-| `/frequency` | Set alert frequency |
-| `/status` | View alert settings |
-| `/unlink` | Disconnect Telegram |
+[![Profile Views](https://komarev.com/ghpvc/?username=Deji-Tech&color=00e676&style=flat-square&label=Profile+Views)](https://github.com/Deji-Tech)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Deji-Tech&theme=dark&hide_border=true)](https://git.io/streak-stats)
+[![X (Twitter)](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/hayodejiii)
+[![Email](https://img.shields.io/badge/Email-dejitech2%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:dejitech2@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/deji-tech)
 
 ---
 
-## API
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Deji-Tech&theme=dark&hide_border=true&card_width=300&show_icons=true&include_all_commits=true" alt="Deji-Tech's GitHub Stats" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deji-Tech&theme=dark&hide_border=true&card_width=300&layout=compact" alt="Top Languages" height="165"/>
+</p>
 
-The FundTracer API provides programmatic access to blockchain forensics data. Generate API keys at [fundtracer.xyz/api/keys](https://fundtracer.xyz/api/keys).
-
-### Base URL
-
-```
-https://www.fundtracer.xyz/api
-```
-
-### Authentication
-
-All endpoints require a Bearer token:
-
-```bash
-curl -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  https://www.fundtracer.xyz/api/analyze/wallet
-```
-
-### Endpoints
-
-#### Wallet Analysis
-
-```bash
-# Analyze a single wallet
-curl -X POST -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"address":"0x742d35Cc6634C0532925a3b844Bc9e7595f5b2a1","chain":"ethereum"}' \
-  https://www.fundtracer.xyz/api/analyze/wallet
-```
-
-#### Funding Tree
-
-```bash
-# Get funding flow graph
-curl -X POST -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"address":"0x742d35Cc6634C0532925a3b844Bc9e7595f5b2a1","chain":"ethereum"}' \
-  https://www.fundtracer.xyz/api/analyze/funding-tree
-```
-
-#### Compare Wallets
-
-```bash
-# Find shared interactions between wallets
-curl -X POST -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"addresses":["0x742d...","0xd8dA..."],"chain":"ethereum"}' \
-  https://www.fundtracer.xyz/api/analyze/compare
-```
-
-#### Sybil Detection
-
-```bash
-# Detect coordinated behavior around a contract
-curl -X POST -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"contractAddress":"0x7a250d...","chain":"ethereum"}' \
-  https://www.fundtracer.xyz/api/analyze/sybil
-```
-
-#### Contract Analysis
-
-```bash
-# Analyze smart contract interactions
-curl -X POST -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"contractAddress":"0x7a250d...","chain":"ethereum"}' \
-  https://www.fundtracer.xyz/api/analyze/contract
-```
-
-#### Batch Analysis *(NEW)*
-
-```bash
-# Analyze up to 50 wallets in one request
-curl -X POST -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"addresses":["0x742d...","0xd8dA..."],"chain":"ethereum"}' \
-  https://www.fundtracer.xyz/api/analyze/batch
-```
-
-#### Transaction Lookup *(NEW)*
-
-```bash
-# Fetch detailed transaction info with logs and gas costs
-curl -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  "https://www.fundtracer.xyz/api/tx/ethereum/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640c5a76964d3e17d20f3e7f52a"
-```
-
-#### Gas Prices *(NEW)*
-
-```bash
-# Get current gas prices (low/medium/high in gwei)
-curl -H "Authorization: Bearer ft_live_YOUR_API_KEY" \
-  "https://www.fundtracer.xyz/api/gas?chain=ethereum"
-
-# Supported chains: ethereum, arbitrum, optimism, polygon, bsc, base
-```
-
-### Supported Chains
-
-| Chain | ID | Identifier |
-|-------|----|----|
-| Ethereum | 1 | `ethereum` |
-| Linea | 59144 | `linea` |
-| Arbitrum | 42161 | `arbitrum` |
-| Base | 8453 | `base` |
-| Optimism | 10 | `optimism` |
-| Polygon | 137 | `polygon` |
-| BNB Chain | 56 | `bsc` |
-
-### SDK
-
-```bash
-npm install @fundtracer/api
-```
-
-```typescript
-import { FundTracerAPI } from '@fundtracer/api';
-
-const ft = new FundTracerAPI('ft_live_YOUR_API_KEY');
-
-// Analyze a wallet
-const { data: wallet } = await ft.analyzeWallet('0x742d...', { chain: 'ethereum' });
-
-// Get funding tree
-const { data: tree } = await ft.getFundingTree('0x742d...', { chain: 'ethereum', maxDepth: 3 });
-
-// Batch analyze wallets
-const { data: batch } = await ft.analyzeBatch(['0x742d...', '0xd8dA...'], 'ethereum');
-
-// Get transaction details
-const { data: tx } = await ft.getTransaction('ethereum', '0x88e6...');
-
-// Get gas prices
-const { data: gas } = await ft.getGasPrices('ethereum');
-```
-
-See [fundtracer.xyz/api-docs](https://fundtracer.xyz/api-docs) for full documentation.
+</div>
 
 ---
 
-## Pricing
+## 📊 GitHub Analytics
 
-All tiers are currently free to use.
-
-| Tier | Price | API Keys | Features |
-|------|-------|----------|----------|
-| Free | $0 | 2 keys | Analyses, all EVM chains, wallet tracing |
-| Pro | $0 | Unlimited | All Free features + Sybil detection |
-| Max | $0 | Unlimited | All Pro features + dedicated support |
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Deji-Tech&theme=github-dark&hide_border=true&bg_color=0d1117&line=00e676&point=00e676" alt="Activity Graph" width="100%"/>
+</p>
 
 ---
 
-## Self-Hosting
+## 🏆 Achievements & Milestones
 
-### Prerequisites
+<p align="center">
 
-- Node.js 18+
-- npm or yarn
-- API keys for blockchain data (Alchemy, Moralis, Dune)
+![Trophy](https://github-profile-trophy.vercel.app/?username=Deji-Tech&theme=dark&no-frame=true&column=6&row=1)
 
-### Setup
+</p>
 
-```bash
-# Clone the repository
-git clone https://github.com/Deji-Tech/fundtracer-by-dt.git
-cd fundtracer-by-dt
+---
 
-# Install dependencies
-npm install
+## 📈 Contribution Heatmap
 
-# Build packages
-npm run build --workspace=@fundtracer/core
-npm run build --workspace=@fundtracer/web
-npm run build --workspace=@fundtracer/server
+<p align="center">
 
-# Configure environment
-cp packages/server/.env.example packages/server/.env
-# Edit .env with your API keys
+![Contribution Heatmap](https://ghchart.rshah.org/Deji-Tech)
 
-# Start the server
-npm start --workspace=@fundtracer/server
+</p>
 
-# For development
-cd packages/web && npm run dev
+---
+
+## 👨‍💻 About Me
+
+```yaml
+name:       Deji-Tech
+role:       Software Engineer & Blockchain Security Researcher
+location:   Remote / Worldwide
+focus:      Secure on-chain systems, smart contracts, backend tooling
+motto:      "Build secure defaults, ship with confidence."
 ```
 
-### Environment Variables
-
-```env
-NODE_ENV=production
-PORT=3001
-FIREBASE_PROJECT_ID=your-project
-FIREBASE_CLIENT_EMAIL=your-email
-FIREBASE_PRIVATE_KEY=your-key
-ALCHEMY_API_KEY=your-key
-MORALIS_API_KEY=your-key
-DUNE_API_KEY=your-key
-JWT_SECRET=your-secret
-```
+I build, audit, and break things in the Web3 space. My work spans from low-level blockchain infrastructure to polished dApp frontends — always with a security-first mindset. Passionate about open-source, developer tooling, and making DeFi safer for everyone.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-**Frontend:** React, TypeScript, Vite, React Router.
+### Languages
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" width="40" height="40" alt="Solidity"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="40" height="40" alt="Rust"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="40" height="40" alt="Go"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="40" height="40" alt="Bash"/>
+</p>
 
-**Backend:** Node.js, Express, Firebase.
-
-**Blockchain:** Ethers.js, Viem, Solana Web3.js.
-
-**APIs:** Alchemy, Moralis, Dune Analytics, CoinGecko.
+| Category | Technologies |
+|---|---|
+| **Blockchain** | Solana, Solana Programs (Anchor), EVM Chains, On-chain Analysis, MEV, Token Standards |
+| **Smart Contracts** | Solidity, Anchor IDL, Program Derived Addresses (PDAs), CPI Invocations |
+| **Backend** | Node.js, Express, FastAPI, REST APIs, GraphQL, WebSocket |
+| **Frontend** | React, Next.js, Vue.js, Tailwind CSS, Shadcn/UI, Framer Motion |
+| **Security** | Smart Contract Auditing, Vulnerability Research, Exploit PoCs, Security Tooling |
+| **DevOps** | Docker, Linux, GitHub Actions, CI/CD, Cloudflare |
+| **Databases** | PostgreSQL, MongoDB, Redis, Supabase, Firebase |
+| **Tools** | Vite, Hardhat, Anchor, Solana CLI, Git, tmux, neovim |
 
 ---
 
-## License
+## 🚀 Featured Projects
 
-GNU General Public License v3.0 - See [LICENSE](LICENSE)
+### 🔥 [NFT Bulk Mint CLI](https://github.com/Deji-Tech/nft-mint-cli) — *New*
+> Production-ready CLI tool for bulk NFT minting with batch processing, progress tracking, and transaction logging.
+> `[Node.js]` `[Ethers.js]` `[CLI]` `[NFT]`
+
+### 🎯 [FairClaim](https://github.com/Deji-Tech/FairClaim)
+> Reputation-based Solana airdrop portal with FairScale integration. Terminal-themed UI for trust-gated token claims.
+> `[Solana]` `[Anchor]` `[FairScale]` `[React]`
+
+### 🔍 [fundtracer-by-dt](https://github.com/Deji-Tech/fundtracer-by-dt)
+> Multi-chain blockchain forensics platform. Trace wallet funds, detect Sybil patterns, and analyze transaction activity.
+> `[On-chain Analysis]` `[Solana]` `[Python]` `[Security]`
+
+### 🛡️ [solana-security-bounty](https://github.com/Deji-Tech/solana-security-bounty)
+> Solana Security Reference: 5 real vulnerability examples with interactive web-based testing.
+> `[Security Research]` `[Solana]` `[Vulnerabilities]` `[Education]`
+
+### 🤖 [agentvault](https://github.com/Deji-Tech/agentvault)
+> Autonomous AI Agent Wallets for Solana. Wallets powered by AI agents with secure transaction signing.
+> `[AI]` `[Solana]` `[Agent Wallets]` `[DeFi]`
+
+### 🎬 [dejitech-mockup](https://github.com/Deji-Tech/dejitech-mockup)
+> Professional device mockup video generator CLI. Overlay screen recordings onto device frames.
+> `[CLI Tool]` `[Video Processing]` `[Python]`
+
+### 🦄 [lazorkit-starter](https://github.com/Deji-Tech/lazorkit-starter)
+> Starter kit for building with Lazorkit on Solana. Jumpstart your next Solana project.
+> `[Solana]` `[Boilerplate]` `[Anchor]`
+
+---
+
+## 📊 Detailed Stats
+
+<div align="center">
+
+| Metric | Value |
+|---|---|
+| **Total Contributions** | `1,000+` |
+| **Total Commits** | `500+` |
+| **Total PRs** | `100+` |
+| **Total Issues** | `50+` |
+| **Repositories** | `30+` |
+| **Stars Earned** | `50+` |
+
+</div>
+
+---
+
+## 🌍 Open Source Stats
+
+<p align="center">
+
+| Package | npm Downloads | GitHub Stars |
+|---|---|---|
+| nft-mint | ![npm](https://img.shields.io/npm/dt/nft-mint?color=00e676) | ⭐ New |
+| fundtracer-cli | ![npm](https://img.shields.io/npm/dt/fundtracer-cli?color=00e676) | ⭐ New |
+
+</p>
+
+---
+
+## 📅 Recent Activity
+
+<!--START_SECTION:activity-->
+<p align="center">
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph/?username=Deji-Tech&theme=dark&hide_border=true&bg_color=0d1117)
+
+</p>
+<!--END_SECTION:activity-->
+
+---
+
+## 📬 Get in Touch
+
+| Channel | Link | Status |
+|---|---|---|
+| **X / Twitter** | [@hayodejiii](https://x.com/hayodejiii) | 🟢 Active |
+| **LinkedIn** | [Deji-Tech](https://linkedin.com/in/deji-tech) | 🟢 Active |
+| **Email** | [dejitech2@gmail.com](mailto:dejitech2@gmail.com) | 🟢 Responsive |
+| **GitHub** | [github.com/Deji-Tech](https://github.com/Deji-Tech) | 🟢 Active |
+
+---
+
+## 💡 Philosophy
+
+> "The best code is the code you don't have to write. The second best code is code that's easy to read, audit, and break."
+
+---
+
+<div align="center">
+
+![Footer](https://komarev.com/ghpvc/?username=Deji-Tech&color=00e676&style=flat-square&label=Total+Profile+Views)
+
+**Built with 💜 and lots of ☕**
+
+*Last Updated: March 2026*
+
+</div>
