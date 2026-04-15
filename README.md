@@ -30,15 +30,6 @@
 
 ---
 
-## Achievements & Milestones
-
-<p align="center">
-
-![Trophy](https://github-profile-trophy.vercel.app/?username=Deji-Tech&theme=dark&no-frame=true&column=6&row=1)
-
-</p>
-
----
 
 ## Contribution Heatmap
 
